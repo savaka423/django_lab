@@ -1,0 +1,127 @@
+body {
+    background: #17b394;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+}
+
+.header img {
+    display: block;
+    width: 240px;
+    margin: 20px auto;
+}
+
+.archive {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.post-title a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    text-decoration: underline;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+}
+
+.article-created-date {
+    text-align: right;
+}
+
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 950px;
+    margin: 0 auto 20px;
+}
+
+.article-header a {
+    color: #ffffff;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.content {
+    max-width: 700px;
+    margin: 60px auto;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 35px 45px;
+    border-radius: 12px;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 14px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.15);
+    color: #ffffff;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    appearance: none;
+}
+
+form textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+    background-color: rgba(255,255,255,0.25);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #e0f7f4;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 190px;
+    margin: 30px auto 0;
+    padding: 12px 0;
+    font-size: 16px;
+    color: #17b394;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background: #149174;
+    border-color: #149174;
+    color: #ffffff;
+}
+
+.form-errors {
+    color: #ffecec;
+    background: rgba(255,0,0,0.35);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
