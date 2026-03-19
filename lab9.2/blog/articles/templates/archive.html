@@ -1,0 +1,54 @@
+{% load static %}
+<title> Архив всех статей </title>
+<link rel="stylesheet" href="{% static 'css/archive.css' %}">
+<body>
+<div class="archive-header">
+    <img src="{% static 'img/dpb-logo.png' %}" class="archive-logo">
+    <div class="archive-title">
+        Коллективный блог
+    </div>
+    <div class="archive-links">
+        <a href="{% url 'registration' %}">
+            Регистрация
+        </a>
+        <a href="{% url 'login' %}">
+            Вход
+        </a>
+    </div>
+    <div class="archive-parallax">
+        <img src="{% static 'img/article-icon-for-parallax.png' %}" class="img1">
+        <img src="{% static 'img/article-icon-for-parallax.png' %}" class="img2">
+        <img src="{% static 'img/article-icon-for-parallax.png' %}" class="img3">
+    </div>
+</div>
+<div class="archive">
+    {% for post in posts %}
+        <div class="article">
+            <h2>
+                <a href="{% url 'get_article' post.id%}">
+                    {{ post.title }}
+                </a>
+                <span class="article-link fold-button">
+                    Свернуть
+                </span>
+            </h2>
+            <div class="article-meta">
+                <span class="article-author">
+                    {{ post.author.username }}
+                </span>
+                <span class="article-date">
+                    {{ post.created_date }}
+                </span>
+            </div>
+            <p class="article-text">
+                {{ post.get_excerpt }}
+            </p>
+        </div>
+    {% endfor %}
+</div>
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/helloworld.js' %}"></script>
+<script src="{% static 'js/fold-post.js' %}"></script>
+<script src="{% static 'js/highlight-post.js' %}"></script>
+<script src="{% static 'js/logo-zoom.js' %}"></script>
+</body>
