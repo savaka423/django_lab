@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #b7d6d0;
+    color: #005c50;
+}
+
+.archive-header {
+    position: relative;
+    min-height: 620px;
+    padding: 35px 40px;
+    background: #b7d6d0;
+}
+
+.archive-logo {
+    display: block;
+    width: 440px;
+    margin: 0 auto;
+    margin-top: 0;
+    transition: transform 0.3s;
+}
+
+.archive-title {
+    margin-top: 120px;
+    font-size: 65px;
+    font-weight: bold;
+    color: #005c50;
+}
+
+.archive-links {
+    margin-top: 100px;
+}
+
+/*.archive-links a {*/
+/*    margin-right: 180px;*/
+/*    font-size: 32px;*/
+/*    font-weight: bold;*/
+/*    color: #00bfa5;*/
+/*    text-decoration: underline;*/
+/*}*/
+
+.article.folded .article-text {
+    display: none;
+}
+
+.archive-links a {
+    margin-right: 340px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #00bfa5;
+    text-decoration: underline;
+}
+
+.archive-parallax {
+    position: absolute;
+    right: 70px;
+    top: 140px;
+    width: 300px;
+    height: 380px;
+}
+
+.archive-parallax img {
+    position: absolute;
+}
+
+.archive-parallax .img1 {
+    width: 140px;
+    top: 0;
+    right: 50;
+}
+
+.archive-parallax .img2 {
+    width: 190px;
+    top: 82px;
+    right: 98px;
+}
+
+.archive-parallax .img3 {
+    width: 230px;
+    top: 170px;
+    right: 146px;
+}
+
+.archive {
+    padding: 45px 18px 60px 18px;
+    background: #7fcfc3;
+}
+
+.article {
+    margin-bottom: 55px;
+    padding: 0;
+    border-bottom: none;
+}
+
+.article h2 {
+    margin: 0 0 12px 0;
+    font-size: 32px;
+}
+
+.article h2 a {
+    color: #005c50;
+    text-decoration: underline;
+}
+
+.article-meta {
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #005c50;
+}
+
+.article-author {
+    font-weight: bold;
+}
+
+.article-date {
+    float: right;
+    font-style: italic;
+}
+
+.article-link {
+    float: right;
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #005c50;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.article-text {
+    margin-top: 10px;
+    line-height: 1.5;
+    color: #005c50;
+}
